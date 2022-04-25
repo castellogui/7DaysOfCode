@@ -22,7 +22,7 @@ public class Desafio250TopFilmes {
             HttpRequest httpRequest = HttpRequest.newBuilder().uri(new URI(uri.toString())).GET().build();
             HttpResponse<String> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
             String json = httpResponse.body();
-            //TODO FAZER TRATAMENTO DO RETORNO
+            System.out.println(json);
 
         }catch (IOException | InterruptedException | URISyntaxException e) {
             System.out.println(e + "\nErro ao construir requisição.");
