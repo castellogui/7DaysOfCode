@@ -6,8 +6,6 @@ import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.ArrayList;
-import java.util.List;
 
 public class DesafioRequest {
     public static void main(String[] args) {
@@ -18,7 +16,6 @@ public class DesafioRequest {
 //        String chave = scanner.next();
 //        scanner.close();
         try{
-
             System.out.println(new DesafioRequest().buscarJson250TopFilmes(new URI(uri.toString()),chave).body());
         }catch (IOException | URISyntaxException | InterruptedException e) {
             e.printStackTrace();
